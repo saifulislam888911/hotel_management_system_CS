@@ -1,0 +1,32 @@
+﻿<Window x:Class="hotel_management_system.Employee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel_management_system"
+        mc:Ignorable="d"
+        Title="Manage Employee" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/9.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition x:Name="manage_employee_form_load" Width="131*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="48,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.979,-1.525" Width="64" Grid.Column="1"/>
+        <TextBox x:Name="id" HorizontalAlignment="Left" Height="23" Margin="117,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" Grid.Column="1"/>
+        <Label Content=" Name:" HorizontalAlignment="Left" Margin="48,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.979,-1.525" Width="64" Grid.Column="1"/>
+        <TextBox x:Name="name" HorizontalAlignment="Left" Height="23" Margin="117,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" Grid.Column="1"/>
+        <Label Content="Position" HorizontalAlignment="Left" Margin="48,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.979,-1.525" Width="64" Grid.Column="1"/>
+        <TextBox x:Name="position" HorizontalAlignment="Left" Height="23" Margin="117,114,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" Grid.Column="1"/>
+        <Label Content="Salary" HorizontalAlignment="Left" Margin="48,153,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.979,-1.525" Width="64" Grid.Column="1"/>
+        <TextBox x:Name="salary" HorizontalAlignment="Left" Height="23" Margin="117,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" Grid.Column="1"/>
+        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Left" Height="199" Margin="48,210,0,0" VerticalAlignment="Top" Width="708" RenderTransformOrigin="0.503,0.494" Grid.Column="1" CellEditEnding="DataGrid1_cell_content_click"/>
+        <Button x:Name="button1" Content="Add Data" HorizontalAlignment="Left" Margin="452,31,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="button1_click" Grid.Column="1"/>
+        <Button x:Name="edit_employee" Content="Edit Data" HorizontalAlignment="Left" Margin="452,77,0,0" VerticalAlignment="Top" Width="75" Height="26" Grid.Column="1" Click="edit_employee_click"/>
+        <Button x:Name="remove_data" Content="Remove" HorizontalAlignment="Left" Margin="452,119,0,0" VerticalAlignment="Top" Width="75" Height="26" Grid.Column="1" Click="removedata_click"/>
+        <Button x:Name="clear" Content="Clear" HorizontalAlignment="Left" Margin="452,161,0,0" VerticalAlignment="Top" Width="75" Height="26" Click="button4_click" Grid.Column="1"/>
+
+    </Grid>
+</Window>

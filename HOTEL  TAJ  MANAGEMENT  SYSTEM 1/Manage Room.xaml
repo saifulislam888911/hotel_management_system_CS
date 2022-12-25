@@ -1,0 +1,27 @@
+﻿<Window x:Class="hotel_management_system.Manage_Room"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:hotel_management_system"
+        mc:Ignorable="d"
+        Title="Manage_Room" Height="550" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/00a633e8a5db1b3a32195d030de6b6c8.jpg"/>
+        </Grid.Background>
+        <Label Content="Room no" HorizontalAlignment="Left" Margin="49,29,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="-0.062,0.615"/>
+        <Label Content="Customer name" HorizontalAlignment="Left" Margin="49,60,0,0" VerticalAlignment="Top" Width="97" RenderTransformOrigin="-0.021,0.404"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="49,106,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label Content="Contact" HorizontalAlignment="Left" Margin="49,147,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label Content="Status" HorizontalAlignment="Left" Margin="49,178,0,0" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="room_no" HorizontalAlignment="Left" Height="23" Margin="138,29,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.513,1.391"/>
+        <TextBox x:Name="customer_name" HorizontalAlignment="Left" Height="23" Margin="165,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.513,1.391"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Height="23" Margin="138,106,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.513,1.391"/>
+        <TextBox x:Name="contact" HorizontalAlignment="Left" Height="23" Margin="138,147,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.513,1.391"/>
+        <TextBox x:Name="status" HorizontalAlignment="Left" Height="23" Margin="138,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.513,1.391"/>
+        <Button x:Name="book" Content="Book Room" HorizontalAlignment="Left" Margin="566,49,0,0" VerticalAlignment="Top" Width="93" Height="38" Click="edit_room_click"/>
+        <DataGrid HorizontalAlignment="Left" Height="270" Margin="49,222,0,0" VerticalAlignment="Top" Width="698"/>
+
+    </Grid>
+</Window>
